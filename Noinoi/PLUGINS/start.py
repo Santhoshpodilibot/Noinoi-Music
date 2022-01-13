@@ -54,11 +54,11 @@ async def _human_time_duration(seconds):
 async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""✨ **ʜᴇʟʟᴏ ɪ ᴀᴍ {message.from_user.mention()} !**\n
-💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **(I⃣   a⃣   m⃣    t⃣   h⃣   r⃣   o⃣   u⃣   g⃣   h⃣   l⃣   y⃣    p⃣   l⃣   a⃣   y⃣    s⃣   o⃣   n⃣   g⃣   s⃣    i⃣   n⃣    v⃣   c⃣   !⃣    Y⃣   o⃣   u⃣    d⃣   o⃣   n⃣   '⃣   t⃣    t⃣   e⃣   n⃣   t⃣   i⃣   o⃣   n⃣    �⃣   �⃣    n⃣   e⃣   n⃣   u⃣    p⃣   e⃣   d⃣   d⃣   a⃣    j⃣   o⃣   k⃣   e⃣   r⃣    b⃣   o⃣   t⃣    n⃣   i⃣    n⃣   a⃣   n⃣   u⃣    m⃣   e⃣    g⃣   r⃣   o⃣   u⃣   p⃣    l⃣   o⃣    a⃣   d⃣   d⃣    c⃣   h⃣   e⃣   s⃣   u⃣    k⃣   o⃣   n⃣   d⃣   i⃣    a⃣   l⃣   a⃣   g⃣   e⃣    n⃣   a⃣    d⃣   e⃣   v⃣   e⃣   l⃣   o⃣   p⃣   e⃣   r⃣    p⃣   e⃣   d⃣   d⃣   a⃣    e⃣   d⃣   a⃣   v⃣   a⃣    @⃣   N⃣   e⃣   w⃣   s⃣   s⃣   t⃣   r⃣   e⃣   a⃣   m⃣   e⃣   r⃣   l⃣   i⃣   v⃣   e⃣    e⃣   d⃣   h⃣   i⃣   n⃣   a⃣    p⃣   r⃣   b⃣   l⃣   m⃣   s⃣    u⃣   n⃣   t⃣   e⃣    e⃣    e⃣   d⃣   a⃣   v⃣   a⃣    k⃣   i⃣    p⃣   m⃣    c⃣   h⃣   e⃣   y⃣   a⃣   n⃣   d⃣   i⃣   }⃣   ]⃣   !⃣   *⃣   *⃣}]!**
+🥰 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **(I⃣   a⃣   m⃣    t⃣   h⃣   r⃣   o⃣   u⃣   g⃣   h⃣   l⃣   y⃣    p⃣   l⃣   a⃣   y⃣    s⃣   o⃣   n⃣   g⃣   s⃣    i⃣   n⃣    v⃣   c⃣   !⃣    Y⃣   o⃣   u⃣    d⃣   o⃣   n⃣   '⃣   t⃣    t⃣   e⃣   n⃣   t⃣   i⃣   o⃣   n⃣    �⃣   �⃣    n⃣   e⃣   n⃣   u⃣    p⃣   e⃣   d⃣   d⃣   a⃣    j⃣   o⃣   k⃣   e⃣   r⃣    b⃣   o⃣   t⃣    n⃣   i⃣    n⃣   a⃣   n⃣   u⃣    m⃣   e⃣    g⃣   r⃣   o⃣   u⃣   p⃣    l⃣   o⃣    a⃣   d⃣   d⃣    c⃣   h⃣   e⃣   s⃣   u⃣    k⃣   o⃣   n⃣   d⃣   i⃣    a⃣   l⃣   a⃣   g⃣   e⃣    n⃣   a⃣    d⃣   e⃣   v⃣   e⃣   l⃣   o⃣   p⃣   e⃣   r⃣    p⃣   e⃣   d⃣   d⃣   a⃣    e⃣   d⃣   a⃣   v⃣   a⃣    @⃣   N⃣   e⃣   w⃣   s⃣   s⃣   t⃣   r⃣   e⃣   a⃣   m⃣   e⃣   r⃣   l⃣   i⃣   v⃣   e⃣    e⃣   d⃣   h⃣   i⃣   n⃣   a⃣    p⃣   r⃣   b⃣   l⃣   m⃣   s⃣    u⃣   n⃣   t⃣   e⃣    e⃣    e⃣   d⃣   a⃣   v⃣   a⃣    k⃣   i⃣    p⃣   m⃣    c⃣   h⃣   e⃣   y⃣   a⃣   n⃣   d⃣   i⃣   }⃣   ]⃣   !⃣   *⃣   *⃣}]!**
 
-💡 **ꜰɪɴᴅ ᴏᴜᴛ ᴀʟʟ ᴛʜᴇ ʙᴏᴛ'ꜱ ᴄᴏᴍᴍᴀɴᴅꜱ ᴀɴᴅ ʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚 ᴄᴏᴍᴍᴀɴᴅꜱ ʙᴜᴛᴛᴏɴ!**
+😝 **ꜰɪɴᴅ ᴏᴜᴛ ᴀʟʟ ᴛʜᴇ ʙᴏᴛ'ꜱ ᴄᴏᴍᴍᴀɴᴅꜱ ᴀɴᴅ ʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚 ᴄᴏᴍᴍᴀɴᴅꜱ ʙᴜᴛᴛᴏɴ!**
 
-🔖 **ᴛᴏ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ, ᴘʟᴇᴀꜱᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ » ❓ ʙᴀꜱɪᴄ ɢᴜɪᴅᴇ ʙᴜᴛᴛᴏɴ!**
+,😳**ᴛᴏ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ, ᴘʟᴇᴀꜱᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ » ❓ ʙᴀꜱɪᴄ ɢᴜɪᴅᴇ ʙᴜᴛᴛᴏɴ!**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
