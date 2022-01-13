@@ -54,7 +54,7 @@ async def _human_time_duration(seconds):
 async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""✨ **ʜᴇʟʟᴏ ɪ ᴀᴍ {message.from_user.mention()} !**\n
-💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **ᴀʟʟᴏᴡꜱ ʏᴏᴜ ᴛᴏ ᴘʟᴀʏ ᴍᴜꜱɪᴄ ᴀɴᴅ ᴠɪᴅᴇᴏ ᴏɴ ɢʀᴏᴜᴘꜱ ᴛʜʀᴏᴜɢʜ ᴛʜᴇ ɴᴇᴡ ᴛᴇʟᴇɢʀᴀᴍ'ꜱ ᴠɪᴅᴇᴏ ᴄʜᴀᴛꜱ!**
+💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **Iam throughly play songs in vc! You don't tention 😂 nenu pedda joker bot ni nanu me group lo add chesu kondi alage na developer pedda edava @Newsstreamerlive edhina prblms unte e edava ki pm cheyandi!**
 
 💡 **ꜰɪɴᴅ ᴏᴜᴛ ᴀʟʟ ᴛʜᴇ ʙᴏᴛ'ꜱ ᴄᴏᴍᴍᴀɴᴅꜱ ᴀɴᴅ ʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚 ᴄᴏᴍᴍᴀɴᴅꜱ ʙᴜᴛᴛᴏɴ!**
 
