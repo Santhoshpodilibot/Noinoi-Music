@@ -1,7 +1,6 @@
-#      <p align="center">𝑵𝒐𝒊𝒏𝒐𝒊 𝑴𝒖𝒔𝒊𝒄 𝑩𝒐𝒕 -𝑪𝑭𝑪 𝑩𝒐𝒕𝒔  </a></p>
-<p align="center">
+#   SANTHU MUSIC
 
-<p align="center"><a href="https://t.me/noinoi_bot"><img src="https://telegra.ph/file/842f2023edaf5b6f726d9.jpg"></a></p>
+<p align="center"><a href="https://t.me/santhu_music_bot"><img src="https://te.legra.ph/file/509686aa88a027bffe2b3.jpg"></a></p>
 <p align="center">
     
 
