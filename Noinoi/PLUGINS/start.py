@@ -62,7 +62,7 @@ async def start_(client: Client, message: Message):
 """,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("📢 ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/{GROUP_SUPPORT}"),
+                [InlineKeyboardButton("SANTHU GADI NETWORK", url=f"https://t.me/{GROUP_SUPPORT}"),
                 InlineKeyboardButton("ꜱᴏᴜʀᴄᴇ", url="https://github.com/hyko-xd/noinoi-music"),
                 InlineKeyboardButton("✨ ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{UPDATES_CHANNEL}"),],
                 [InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="cbcmds"),
@@ -135,7 +135,7 @@ async def new_chat(c: Client, m: Message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                            InlineKeyboardButton("SANTHU GADI NETWORK", url=f"https://t.me/{UPDATES_CHANNEL}"),
                             InlineKeyboardButton("💭 ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP_SUPPORT}")
                         ],
                         [
