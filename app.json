@@ -1,7 +1,7 @@
 {
-    "name": "NOINOI MUSIC BOT",
+    "name": "SANTHU MUSIC BOT",
     "description": "Telegram bot for Music trought the Telegram Group Video Chat, powered by pytgcalls and pyrogram",
-    "logo": "https://telegra.ph/file/a6ecf55030de27c5b7690.jpg",
+    "logo": "https://te.legra.ph/file/509686aa88a027bffe2b3.jpg",
     "keywords": [
         "pytgcalls",
         "telegram bot",
@@ -9,8 +9,8 @@
         "pyrogram"
     ],
     "website": "https://t.me/BAZIGARXD",
-    "repository": "https://github.com/HYKO-XD/NOINOI-MUSIC",
-    "success_url": "https://t.me/BAZIGARYT",
+    "repository": "https://github.com/Santhoshpodilibot/Noinoi-Music.git",
+    "success_url": "https://t.me/santhu_music_bot",
     "env": {
         "API_ID": {
             "description": "your API_ID from my.telegram.org",
