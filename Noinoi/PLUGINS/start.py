@@ -3,7 +3,7 @@ from sys import version_info
 from time import time
 
 from Noinoi.config import (
-    ALIVE_IMG,
+    ALIVE_IMG,"https://te.legra.ph/file/509686aa88a027bffe2b3.jpg", 
     ALIVE_NAME,
     BOT_NAME,
     BOT_USERNAME,
