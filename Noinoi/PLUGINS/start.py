@@ -56,20 +56,17 @@ async def start_(client: Client, message: Message):
         f"""✨ ʜᴇʟʟᴏ ɪ ᴀᴍ {message.from_user.mention()} !\n
 💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) !
 
-💡 **ɴᴀɴᴜ ᴏᴋᴀ ᴘᴏᴡᴇʀғᴜʟ ᴍᴜsɪᴄ ᴀɴᴅ ᴠɪᴅᴇᴏ ʙᴏᴛ 
-ʜɪɢʜ ǫᴜᴀʟɪᴛʏ ᴠɪᴅᴇᴏ sᴜᴘᴘᴏʀᴛ
-ᴀ ᴄᴀᴛ ᴛʜᴇᴍᴇᴅ ʀᴏʙᴏᴛ
-
-ᴘᴏᴡᴇʀᴇᴅ ʙʏ ⚡(https://t.me/Santhoshpodilivcplayer1234bot) **
+💡 ** ʜɪ ɪᴀᴍ ʏᴏᴜʀ ᴍᴜꜱɪᴄ ʙᴏᴛ ᴘʟᴇᴀꜱᴇ ᴀᴅᴅ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🥺 ᴀɴᴅ ʟɪꜱᴛᴇɴ ꜱᴏɴɢꜱ..
+ᴘᴏᴡᴇʀᴇᴅ ʙʏ ⚡(https://t.me/youtubetaskstelugu) **
 """,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("📢 ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/{GROUP_SUPPORT}"),
-                InlineKeyboardButton("ꜱᴏᴜʀᴄᴇ", url="https://t.me/Catmusicworld"),
+                [InlineKeyboardButton("😍 ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("😀 ꜱᴏᴜʀᴄᴇ", url="https://t.me/newsstreamer"),
                 InlineKeyboardButton("✨ ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{UPDATES_CHANNEL}"),],
-                [InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="cbcmds"),
+                [InlineKeyboardButton("☺ ᴄᴏᴍᴍᴀɴᴅꜱ ʜᴇʟᴘ", callback_data="cbcmds"),
                 InlineKeyboardButton("❓ ꜱᴇᴛᴜᴘ", callback_data="cbsetup"),],
-                [InlineKeyboardButton(" ᴀᴅᴅ ᴍᴇᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true",)],
+                [InlineKeyboardButton(" ꜱᴀɴᴛʜᴜ ɴɪ ᴀᴅᴅ ᴄʜᴇꜱᴜ ᴋᴏ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true",)],
             ]
         ),
         disable_web_page_preview=True,
@@ -87,9 +84,9 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("✨ Group", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("✨ Group", url=f"https://t.me/newsstreamer"),
                 InlineKeyboardButton(
-                    "📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "📣 Channel", url=f"https://t.me/newsstreamer"
                 ),
             ]
         ]
@@ -110,3 +107,40 @@ async def ping_pong(client: Client, message: Message):
     m_reply = await message.reply_text("pinging...")
     delta_ping = time() - start
     await m_reply.edit_text("🏓 PONG!!\n" f"⚡️ {delta_ping * 1000:.3f} ms")
+@Client.on_message(command(["uptime", f"uptime@{BOT_USERNAME}"]) & ~filters.edited)
+async def get_uptime(client: Client, message: Message):
+    current_time = datetime.utcnow()
+    uptime_sec = (current_time - START_TIME).total_seconds()
+    uptime = await _human_time_duration(int(uptime_sec))
+    await message.reply_text(
+        "🤖 bot status:\n"
+        f"• uptime: {uptime}\n"
+        f"• start time: {START_TIME_ISO}"
+    )
+
+
+@Client.on_message(filters.new_chat_members)
+async def new_chat(c: Client, m: Message):
+    ass_uname = (await user.get_me()).username
+    bot_id = (await c.get_me()).id
+    for member in m.new_chat_members:
+        if member.id == bot_id:
+            return await m.reply(
+                "❤️ Thanks for adding me to the Group !\n\n"
+                "Appoint me as administrator in the Group, otherwise I will not be able to work properly, and don't forget to type /userbotjoin for invite the assistant.\n\n"
+                "Once done, then type /reload",
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton("📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/newsstreamer"),
+                            InlineKeyboardButton("💭 ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/newsstreamer")
+                        ],
+                        [
+                            InlineKeyboardButton("😊 ᴀꜱꜱɪꜱᴛᴀɴᴛ", url=f"https://t.me/{ass_uname}")
+                        ]
+                        [
+                            InlineKeyboardButton("😘 ᴄᴏᴍᴍᴀɴᴅꜱ ʜᴇʟᴘ", callback_data="cbcmds")
+                        ]
+                    ]
+                )
+            )
