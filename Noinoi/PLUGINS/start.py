@@ -58,16 +58,16 @@ async def start_(client: Client, message: Message):
 
 😝 **ꜰɪɴᴅ ᴏᴜᴛ ᴀʟʟ ᴛʜᴇ ʙᴏᴛ'ꜱ ᴄᴏᴍᴍᴀɴᴅꜱ ᴀɴᴅ ʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚 ᴄᴏᴍᴍᴀɴᴅꜱ ʙᴜᴛᴛᴏɴ!**
 
-,😳**ᴛᴏ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ, ᴘʟᴇᴀꜱᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ » ❓ ʙᴀꜱɪᴄ ɢᴜɪᴅᴇ ʙᴜᴛᴛᴏɴ!**
+😳 **ᴛᴏ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ, ᴘʟᴇᴀꜱᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ » ❓ ʙᴀꜱɪᴄ ɢᴜɪᴅᴇ ʙᴜᴛᴛᴏɴ!**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("SANTHUGADINETWORK", url=f"https://t.me/Newsstreamerlive"),
-                InlineKeyboardButton("LOVE❤", url="https://github.com/hyko-xd/noinoi-music"),
-                InlineKeyboardButton("✨ SANTHU", url=f"https://t.me/Newsstreamerlive"),],
+                InlineKeyboardButton("✨ SANTHU", url=f"https://t.me/Newsstreamerlive"),],        
+                InlineKeyboardButton("✨ OWNER", url=f"https://t.me/santhu_music_bot"),],
                 [InlineKeyboardButton("📚 SANTHUHELP", callback_data="cbcmds"),
-                InlineKeyboardButton("❓ ꜱᴇᴛᴜᴘ", callback_data="cbsetup"),],
-                [InlineKeyboardButton(" ➕SANTHU GADINI ADD CHESUKO➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true",)],
+                InlineKeyboardButton("❓ SANTHU SET UP", callback_data="cbsetup"),],
+                [InlineKeyboardButton("➕SANTHU GADINI ADD CHESUKO➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true",)],
             ]
         ),
         disable_web_page_preview=True,
@@ -135,14 +135,14 @@ async def new_chat(c: Client, m: Message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("SANTHU NETWORK", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                            InlineKeyboardButton("💭 ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP_SUPPORT}")
+                            InlineKeyboardButton("🤣 SANTHU NETWORK", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                            InlineKeyboardButton("💭 GROUP", url=f"https://t.me/{GROUP_SUPPORT}")
                         ],
                         [
-                            InlineKeyboardButton("👤 ᴀꜱꜱɪꜱᴛᴀɴᴛ", url=f"https://t.me/{ass_uname}")
+                            InlineKeyboardButton("👤 HELPER", url=f"https://t.me/{ass_uname}")
                         ]
                         [
-                            InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="cbcmds")
+                            InlineKeyboardButton("📚 HELP COMMANDS", callback_data="cbcmds")
                         ]
                     ]
                 )
