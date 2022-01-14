@@ -88,7 +88,7 @@ async def alive(client: Client, message: Message):
                 InlineKeyboardButton("✨ Group", url=f"https://t.me/newsstreamer", 
                 InlineKeyboardButton(
                     "😃 Channel", url=f"https://t.me/newsstreamer", 
-                ),
+                )
             ]
         ]
     )
