@@ -11,19 +11,19 @@ from Noinoi.config import (
     OWNER_NAME,
     UPDATES_CHANNEL,
 )
-from Noinoi.PLUGINS import __version__
+from Noinoi.PLUGINS import version
 from Noinoi.DREAMS.cfc import user
 from Noinoi.DREAMS.filters import command, other_filters
 from pyrogram import Client, filters
-from pyrogram import __version__ as pyrover
-from pytgcalls import (__version__ as pytover)
+from pyrogram import version as pyrover
+from pytgcalls import (version as pytover)
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-__major__ = 0
-__minor__ = 2
-__micro__ = 1
+major = 0
+minor = 2
+micro = 1
 
-__python_version__ = f"{version_info[0]}.{version_info[1]}.{version_info[2]}"
+python_version = f"{version_info[0]}.{version_info[1]}.{version_info[2]}"
 
 
 START_TIME = datetime.utcnow()
@@ -53,21 +53,23 @@ async def _human_time_duration(seconds):
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""✨ **ʜᴇʟʟᴏ ɪ ᴀᴍ {message.from_user.mention()} !**\n
-🥰 [{BOT_NAME}](https://t.me[{GROUP_NAME}] HI ALL!**
+        f"""✨ ʜᴇʟʟᴏ ɪ ᴀᴍ {message.from_user.mention()} !\n
+💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) !
 
-😝 **ꜰɪɴᴅ ᴏᴜᴛ ᴀʟʟ ᴛʜᴇ ʙᴏᴛ'ꜱ ᴄᴏᴍᴍᴀɴᴅꜱ ᴀɴᴅ ʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚 ᴄᴏᴍᴍᴀɴᴅꜱ ʙᴜᴛᴛᴏɴ!**
+💡 **ɴᴀɴᴜ ᴏᴋᴀ ᴘᴏᴡᴇʀғᴜʟ ᴍᴜsɪᴄ ᴀɴᴅ ᴠɪᴅᴇᴏ ʙᴏᴛ 
+ʜɪɢʜ ǫᴜᴀʟɪᴛʏ ᴠɪᴅᴇᴏ sᴜᴘᴘᴏʀᴛ
+ᴀ ᴄᴀᴛ ᴛʜᴇᴍᴇᴅ ʀᴏʙᴏᴛ
 
-😳 **ᴛᴏ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ, ᴘʟᴇᴀꜱᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ » ❓ ʙᴀꜱɪᴄ ɢᴜɪᴅᴇ ʙᴜᴛᴛᴏɴ!**
+ᴘᴏᴡᴇʀᴇᴅ ʙʏ ⚡(https://t.me/Santhoshpodilivcplayer1234bot) **
 """,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("SANTHUGADINETWORK", url=f"https://t.me/Newsstreamerlive"),
-                InlineKeyboardButton("✨ SANTHU", url=f"https://t.me/Newsstreamerlive"),],        
-                InlineKeyboardButton("✨ OWNER", url=f"https://t.me/santhu_music_bot"),],
-                [InlineKeyboardButton("📚 SANTHUHELP", callback_data="cbcmds"),
-                InlineKeyboardButton("❓ SANTHU SET UP", callback_data="cbsetup"),],
-                [InlineKeyboardButton("➕SANTHU GADINI ADD CHESUKO➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true",)],
+                [InlineKeyboardButton("📢 ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("ꜱᴏᴜʀᴄᴇ", url="https://t.me/Catmusicworld"),
+                InlineKeyboardButton("✨ ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{UPDATES_CHANNEL}"),],
+                [InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="cbcmds"),
+                InlineKeyboardButton("❓ ꜱᴇᴛᴜᴘ", callback_data="cbsetup"),],
+                [InlineKeyboardButton(" ᴀᴅᴅ ᴍᴇᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true",)],
             ]
         ),
         disable_web_page_preview=True,
@@ -85,18 +87,18 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("✨ Group", url=f"https://t.me/newsstreamer", 
+                InlineKeyboardButton("✨ Group", url=f"https://t.me/{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "😃 Channel", url=f"https://t.me/newsstreamer", 
-                )
+                    "📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                ),
             ]
         ]
     )
 
-    alive = f"**Hello {message.from_user.mention()}, i'm {BOT_NAME}**\n\n✨ Bot is working normally\n🍀 My Master: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n✨ Bot Version: `v{__version__}`\n🍀 Pyrogram Version: `{pyrover}`\n✨ Python Version: `{__python_version__}`\n🍀 PyTgCalls version: `{pytover.__version__}`\n✨ Uptime Status: `{uptime}`\n\n**Thanks for Adding me here, for playing video & music on your Group's video chat** ❤"
+    alive = f"Hello {message.from_user.mention()}, i'm {BOT_NAME}\n\n✨ Bot is working normally\n🍀 My Master: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n✨ Bot Version: v{version}\n🍀 Pyrogram Version: {pyrover}\n✨ Python Version: {python_version}\n🍀 PyTgCalls version: {pytover.version}\n✨ Uptime Status: {uptime}\n\nThanks for Adding me here, for playing video & music on your Group's video chat ❤"
 
     await message.reply_photo(
-        photo=f"", 
+        photo=f"{ALIVE_IMG}",
         caption=alive,
         reply_markup=keyboard,
     )
@@ -107,43 +109,4 @@ async def ping_pong(client: Client, message: Message):
     start = time()
     m_reply = await message.reply_text("pinging...")
     delta_ping = time() - start
-    await m_reply.edit_text("🏓 `PONG!!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`")
-
-
-@Client.on_message(command(["uptime", f"uptime@{BOT_USERNAME}"]) & ~filters.edited)
-async def get_uptime(client: Client, message: Message):
-    current_time = datetime.utcnow()
-    uptime_sec = (current_time - START_TIME).total_seconds()
-    uptime = await _human_time_duration(int(uptime_sec))
-    await message.reply_text(
-        "🤖 bot status:\n"
-        f"• **uptime:** `{uptime}`\n"
-        f"• **start time:** `{START_TIME_ISO}`"
-    )
-
-
-@Client.on_message(filters.new_chat_members)
-async def new_chat(c: Client, m: Message):
-    ass_uname = (await user.get_me()).username
-    bot_id = (await c.get_me()).id
-    for member in m.new_chat_members:
-        if member.id == bot_id:
-            return await m.reply(
-                "❤️ Thanks for adding me to the **Group** !\n\n"
-                "Appoint me as administrator in the **Group**, otherwise I will not be able to work properly, and don't forget to type `/userbotjoin` for invite the assistant.\n\n"
-                "Once done, then type `/reload`",
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton("🤣 SANTHU NETWORK", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                            InlineKeyboardButton("💭 GROUP", url=f"https://t.me/{GROUP_SUPPORT}")
-                        ],
-                        [
-                            InlineKeyboardButton("👤 HELPER", url=f"https://t.me/{ass_uname}")
-                        ]
-                        [
-                            InlineKeyboardButton("📚 HELP COMMANDS", callback_data="cbcmds")
-                        ]
-                    ]
-                )
-            )
+    await m_reply.edit_text("🏓 PONG!!\n" f"⚡️ {delta_ping * 1000:.3f} ms")
