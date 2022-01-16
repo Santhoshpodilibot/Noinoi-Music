@@ -24,12 +24,12 @@ async def cbstart(_, query: CallbackQuery):
 🔖 **To know how to use this bot, please click on the » ❓ Basic Guide button!**""",
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("📢 ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/{GROUP_SUPPORT}"),
-                InlineKeyboardButton("ꜱᴏᴜʀᴄᴇ", url="https://T.ME/BAZIGARYT"),
+                [InlineKeyboardButton("📢 𝗡𝗘𝗧 𝗪𝗢𝗥𝗞", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("ꜱᴏᴜʀᴄᴇ", url="https://T.ME/newsstreamer"),
                 InlineKeyboardButton("✨ ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{UPDATES_CHANNEL}"),],
-                [InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="cbcmds"),
-                InlineKeyboardButton("❓ ꜱᴇᴛᴜᴘ", callback_data="cbsetup"),],
-                [InlineKeyboardButton(" ᴀᴅᴅ ᴍᴇᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true",)],
+                [InlineKeyboardButton("📚 𝗦𝗔𝗡𝗧𝗛𝗨 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦", callback_data="cbcmds"),
+                InlineKeyboardButton("❓ 𝗦𝗔𝗡𝗧𝗛𝗨 𝗛𝗘𝗟𝗣", callback_data="cbsetup"),],
+                [InlineKeyboardButton(" 𝙽𝚊𝚗𝚞 𝚊𝚍𝚍 𝚌𝚑𝚎𝚜𝚞 kondi😘", url=f"https://t.me/{BOT_USERNAME}?startgroup=true",)],
             ]
         ),
         disable_web_page_preview=True,
@@ -41,7 +41,7 @@ async def cbguides(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""❓ **Basic Guide for using this bot:**
         
-⊙ https://telegra.ph/file/a671532c23687e6fcc431.mp4
+
 
 1.) **First, add me to your group.**
 2.) **Then, promote me as administrator and give all permissions except Anonymous Admin.**
@@ -54,7 +54,7 @@ async def cbguides(_, query: CallbackQuery):
 
 💡 **If you have a follow-up questions about this bot, you can tell it on my support chat here: @{GROUP_SUPPORT}**
 
-**✨ ᴘᴏᴡᴇʀᴅ ʙʏ ɴᴏɪɴᴏɪ ᴍᴜꜱɪᴄ** """,
+**✨ ᴘᴏᴡᴇʀᴅ ʙʏ 𝗦𝗔𝗡𝗧𝗛𝗨 ᴍᴜꜱɪᴄ** """,
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("ʙ ᴀ ᴄ ᴋ", callback_data="cbstart")]]
         ),
@@ -68,7 +68,7 @@ async def cbcmds(_, query: CallbackQuery):
 
 » **press the button below to read the explanation and see the list of available commands !**
 
-**✨ ᴘᴏᴡᴇʀᴅ ʙʏ ɴᴏɪɴᴏɪ ᴍᴜꜱɪᴄ** """,
+**✨ ᴘᴏᴡᴇʀᴅ ʙ𝘆 𝘀𝗮𝗻𝘁𝗵𝘂 ᴍᴜꜱɪᴄ** """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
