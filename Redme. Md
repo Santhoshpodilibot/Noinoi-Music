@@ -57,7 +57,8 @@ async def start_(client: Client, message: Message):
 💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) !
 
 💡 ** ʜɪ ɪᴀᴍ ʏᴏᴜʀ ᴍᴜꜱɪᴄ ʙᴏᴛ ᴘʟᴇᴀꜱᴇ ᴀᴅᴅ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🥺 ᴀɴᴅ ʟɪꜱᴛᴇɴ ꜱᴏɴɢꜱ..
-ᴘᴏᴡᴇʀᴇᴅ ʙʏ ⚡(https://t.me/youtubetaskstelugu) **
+ᴘᴏᴡᴇʀᴇᴅ ʙʏ 
+𝗣𝗼𝘄𝗱𝗲𝗿𝗲𝗱 𝗯𝘆 ⚡(https://t.me/youtubetaskstelugu) **
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -85,8 +86,7 @@ async def alive(client: Client, message: Message):
         [
             [
                 InlineKeyboardButton("✨ Group", url=f"https://t.me/newsstreamer"),
-                InlineKeyboardButton(
-                    "📣 Channel", url=f"https://t.me/newsstreamer"
+                InlineKeyboardButton("📣 Channel", url=f"https://t.me/newsstreamer"
                 ),
             ]
         ]
